@@ -3,38 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Date Calculator</title>
+  <title>Age Calculator Hive</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="input-flex">
-      <div class="input-container">
-        <span>Day</span>
+    <div class="date-input">
+      <div class="input-group">
+        <label for="day">Day</label>
         <input type="number" id="day" placeholder="DD">
-        <small class="error-day">This field is required</small>
-      </div>
-      
-      <div class="input-container"></div>
-        <span>Month</span>
-        <input type="number" id="day" placeholder="MM">
         <small class="error-day"></small>
       </div>
-      
-      <div class="input-container"></div>
-        <span>Year</span>
-        <input type="number" id="day" placeholder="YY">
-        <small class="error-day"></small>
+      <div class="input-group">
+        <label for="month">Month</label>
+        <input type="number" id="month" placeholder="MM">
+        <small class="error-month"></small>
       </div>
-    </div>
-  
-    <button class="submit-btn">⇩</button>
+      <div class="input-group">
+        <label for="year">Year</label>
+        <input type="number" id="year" placeholder="YYYY">
+        <small class="error-year"></small>
+      </div>
+      
+    </div><hr>
+    <div class="calculate-btn">
+        
+        <button>⇩</button>
+      </div>
     <div class="output">
-      <h1><span class="output-year">--</span>years</h1>
-      <h1><span class="output-month">--</span>months</h1>
-      <h1><span class="output-day">--</span>days</h1>
+      <p><span class="output-year">--</span> years</p>
+      <p><span class="output-month">--</span> months</p>
+      <p><span class="output-day">--</span> days</p>
     </div>
-  </div>  
-    <script src="app.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
